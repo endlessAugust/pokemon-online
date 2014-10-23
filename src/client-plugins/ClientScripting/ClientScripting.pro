@@ -8,6 +8,8 @@ QT += script network declarative
 
 TARGET = ClientScripting
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 EXTRAS=clientplugin
 
 DEFINES += CLIENTSCRIPTING_LIBRARY

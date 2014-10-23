@@ -7,6 +7,8 @@
 QT += declarative opengl
 TARGET = po-battlemanager
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 
 DEFINES += BATTLEMANAGER_LIBRARY
 
