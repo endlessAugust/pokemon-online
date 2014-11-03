@@ -4,7 +4,7 @@
 
 source=/tmp/Pokemon-Online-dmg-creation
 title=Pokemon-Online
-size=120000
+size=200000
 
 applicationName="Pokemon-Online.app"
 
