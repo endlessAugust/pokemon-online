@@ -152,13 +152,11 @@ macx {
    ICON = pokemononline.icns
    QMAKE_INFO_PLIST = Info.plist
    
-   HEADERS += mac/SparkleAutoUpdater.h \
-              mac/FullScreenSupport.h \
+   HEADERS += mac/FullScreenSupport.h \
               mac/CocoaInitializer.h
-   OBJECTIVE_SOURCES += mac/SparkleAutoUpdater.mm \
-                        mac/FullScreenSupport.mm \
+   OBJECTIVE_SOURCES += mac/FullScreenSupport.mm \
                         mac/CocoaInitializer.mm
-   LIBS += -framework Sparkle -framework AppKit
+   LIBS += -framework AppKit
 
    QMAKE_LFLAGS_SONAME  = -Wl,-install_name,@executable_path/../Frameworks/
    LINKLIBS = libpo-utilities.1.0.0.dylib libpo-pokemoninfo.1.0.0.dylib libpo-battlemanager.1.0.0.dylib
@@ -167,7 +165,6 @@ macx {
        QMAKE_POST_LINK += cp -f $${DESTDIR}/$${L} $${DESTDIR}/$${TARGET}.app/Contents/Frameworks/;
        QMAKE_POST_LINK += ln -s $${L} $${DESTDIR}/$${TARGET}.app/Contents/Frameworks/$$replace(L, 1.0.0, 1);
    }
-   QMAKE_POST_LINK += macdeployqt $${DESTDIR}/$${TARGET}.app
 }
 
 CONFIG(debian_package) {

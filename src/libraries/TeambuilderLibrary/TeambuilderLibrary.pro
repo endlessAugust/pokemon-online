@@ -8,6 +8,8 @@ QT       += widgets
 
 TARGET = po-teambuilder
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 
 SOURCES += \
     theme.cpp \

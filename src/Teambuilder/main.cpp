@@ -24,7 +24,6 @@
 #ifdef Q_OS_MACX
 #include <CoreFoundation/CFURL.h>
 #include <CoreFoundation/CFBundle.h>
-#include "mac/SparkleAutoUpdater.h"
 #include "mac/CocoaInitializer.h"
 #endif
 
@@ -156,8 +155,8 @@ int main(int argc, char *argv[])
 
         // Check if there are updates using Sparkle
         CocoaInitializer initializer;
-        SparkleAutoUpdater* updater = new SparkleAutoUpdater;
-        updater->checkForUpdates();
+        //SparkleAutoUpdater* updater = new SparkleAutoUpdater;
+        //updater->checkForUpdates();
 #else
         // Auto updator and Icon are not applicable on Mac OSX
         // Mac OSX has it's own updater using Sparkle

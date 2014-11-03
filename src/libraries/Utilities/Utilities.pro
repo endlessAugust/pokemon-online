@@ -3,6 +3,8 @@ TARGET = po-utilities
 QT += network gui
 
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 
 DEFINES -= UNICODE
 SOURCES += otherwidgets.cpp \
