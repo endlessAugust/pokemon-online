@@ -6,6 +6,8 @@
 
 TARGET = ThemeManager
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 EXTRAS=clientplugin
 
 QT += network xml

@@ -13,6 +13,9 @@
 #elif defined(Q_OS_WIN)
 #define OS_EXE_SUFFIX (SUFFIX ".exe")
 #define OS_LIB_SUFFIX (SUFFIX ".dll")
+#elif defined(Q_OS_MAC)
+#define OS_EXE_SUFFIX (SUFFIX "")
+#define OS_LIB_SUFFIX (SUFFIX ".dylib")
 #else
 #error "unkown OS"
 #endif

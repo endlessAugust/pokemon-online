@@ -4,6 +4,8 @@
 TARGET = usagestats
 EXTRAS=battleserverplugin
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 DEFINES += POKEMONONLINESTATSPLUGIN_LIBRARY
 DEFINES += SERVER_SIDE
 SOURCES += usagestats.cpp

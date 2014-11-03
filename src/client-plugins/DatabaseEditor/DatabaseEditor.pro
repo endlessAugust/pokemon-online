@@ -8,6 +8,8 @@ QT       += widgets
 
 TARGET = DatabaseEditor
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 EXTRAS=clientplugin
 
 DEFINES += DATABASEEDITOR_LIBRARY

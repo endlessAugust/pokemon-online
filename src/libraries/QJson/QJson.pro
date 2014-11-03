@@ -9,6 +9,8 @@ QT       -= gui
 
 TARGET = qjson
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 
 DEFINES += QJSON_MAKEDLL
 
