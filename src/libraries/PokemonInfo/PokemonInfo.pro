@@ -1,5 +1,7 @@
 TARGET = po-pokemoninfo
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 QT += xml
 SOURCES += pokemonstructs.cpp \
     pokemoninfo.cpp \

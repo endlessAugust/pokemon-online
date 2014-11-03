@@ -10,6 +10,8 @@ QT       -= gui
 
 TARGET = qtwebsocket
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 
 #DEFINES += QTWEBSOCKET_LIBRARY
 

@@ -6,6 +6,8 @@
 
 TARGET = battlelogs
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 EXTRAS=battleserverplugin
 DEFINES += BATTLELOGS_LIBRARY
 QT += gui core declarative

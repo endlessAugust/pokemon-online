@@ -6,6 +6,8 @@
 
 TARGET = QRCodePlugin
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 DESTDIR = $$PWD/../../bin/myplugins
 
 QT += xml

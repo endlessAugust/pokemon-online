@@ -8,6 +8,8 @@ QT       += network
 
 TARGET = WebServerPlugin
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 EXTRAS=serverplugin
 
 DEFINES += WEBSERVERPLUGIN_LIBRARY

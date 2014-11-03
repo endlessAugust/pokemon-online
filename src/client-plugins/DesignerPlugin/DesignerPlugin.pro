@@ -1,5 +1,7 @@
 TARGET = DesignerPlugin
 TEMPLATE = lib
+CONFIG += plugin dylib
+VERSION = 1.0.0
 EXTRAS=clientplugin
 
 DEFINES += DESIGNERPLUGIN_LIBRARY
